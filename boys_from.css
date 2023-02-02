@@ -19,8 +19,8 @@
 }
 
 .contain video{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     position: fixed;
     left: 0;
@@ -115,6 +115,6 @@
         font-size: 1rem;
     }
     .from_container{
-        height: 78%;
+        height: 80%;
     }
 }
