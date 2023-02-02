@@ -75,6 +75,7 @@ body video{
     .main_body {
         flex-direction: column;
         height: 100%;
+        margin: 1.7rem;
     }
     .card{
         margin: 1rem;
