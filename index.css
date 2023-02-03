@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 * {
     color: white;
     /* background-color: rgb(0, 0, 0); */
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
 }
 
-body video{
+body video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -23,66 +25,103 @@ body video{
     height: 100vh;
     width: 100vw;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.305);
 }
 
 .main_body {
     /* width: 90%; */
     margin: 3rem;
-   height: 70%;
+    height: 70%;
     padding: 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     /* border: 2px solid red; */
     justify-content: center;
-    background-color: #04a4b60b;
+    background-color: #04a4b61e;
     box-shadow: inset 0 0 30px #04a4b69b;
     border-radius: 3rem;
+
+     /* animation effect */
+     animation-name: backgroundColorPalette;
+     animation-duration: 10s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
 }
-.contaier h2{
+
+.contaier h2 {
     font-size: 4rem;
     margin: 3rem;
+    padding: 2rem;
     text-align: center;
     background-color: #04a4b629;
     box-shadow: inset 0 0 30px #04a4b69b;
     border-radius: 3rem;
-    height: 6rem;
-   text-shadow: 0 0 10px rgb(0 1 53);
+    /* height: 6rem; */
+    text-shadow: 0 0 10px rgb(0 1 53);
     display: flex;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
+
+    /* animation effect */
+    animation-name: backgroundColorPalette;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
-.card{
+
+.card {
     text-align: center;
     margin: 10rem;
     box-shadow: 0 0 30px rgba(10, 237, 245, 0.59);
     background-color: rgb(0, 0, 0);
 }
-.submit{
+
+.submit {
     text-decoration: none;
     color: white;
 
 }
-.submit h2{
+
+.submit h2 {
     /* border: 2px solid red; */
     border-radius: 6rem;
     width: 12rem;
     padding: 0.4rem;
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
     .main_body {
         flex-direction: column;
         height: 100%;
         margin: 1.7rem;
     }
-    .card{
+
+    .card {
         margin: 1rem;
     }
-    .contaier h2{
+
+    .contaier h2 {
         font-size: 2rem;
         height: 8rem;
-        
+
     }
 }
+
+/* animation effect */
+@keyframes backgroundColorPalette {
+    0% {
+      background: #cdee552d;
+    }
+    25% {
+      background: #60b6d32d;
+    }
+    50% {
+      background: #f683e12f;
+    }
+    75% {
+      background: #fa583f2b;
+    }
+    100% {
+      background: #6c6fff2e;
+    }
+  }
